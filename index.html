@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Carreras de autos multijugador</title>
+    <!-- Lib -->
+    <script src="./p5.min.js"></script> 
+    <script src="./p5.dom.min.js"></script>
+    <script src="./p5.sound.min.js"></script>
+    <script src="./p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyD8f-XciEU-ILI5-JbHLnNioeK7u7Xlo5A",
+        authDomain: "carrera-de-autos-d9570.firebaseapp.com",
+        databaseURL: "https://carrera-de-autos-d9570-default-rtdb.firebaseio.com",
+        projectId: "carrera-de-autos-d9570",
+        storageBucket: "carrera-de-autos-d9570.appspot.com",
+        messagingSenderId: "869563570296",
+        appId: "1:869563570296:web:436e240a3685859479358d"
+      };
+      // Inicia Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <script src="./Game.js"></script>
+    <script src="./Form.js"></script>
+    <script src="./Player.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
